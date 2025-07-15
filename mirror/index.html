@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小原の镜像站 - 轻量Python源</title>
+    <style>
+        :root {
+            --main-color: #ff9ff3;  /* 樱花粉 */
+            --accent-color: #74b9ff; /* 天蓝 */
+            --bg-color: #ffe6f4;    /* 浅粉背景 */
+        }
+        body {
+            font-family: "Comic Sans MS", "幼圆", cursive;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffd9e8, #d8b9ff);
+            color: #4a4a4a;
+        }
+        header {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255,255,255,0.8);
+            border-radius: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(255,105,180,0.2);
+            position: relative;
+        }
+        header::before {
+            content: '✨';
+            position: absolute;
+            font-size: 2em;
+            left: 10px;
+            top: 10px;
+        }
+        h1 {
+            color: var(--main-color);
+            text-shadow: 2px 2px 0 #fff;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .anime-box {
+            background: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+            border: 2px dashed var(--accent-color);
+            position: relative;
+        }
+        .anime-box::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23ff9ff3" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>');
+            right: -10px;
+            top: -10px;
+        }
+        .sync-logos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .sync-logos img {
+            height: 50px;
+            transition: transform 0.3s;
+        }
+        .sync-logos img:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        code {
+            background: rgba(255,255,255,0.9);
+            padding: 5px 10px;
+            border-radius: 8px;
+            border: 1px solid var(--main-color);
+            font-family: "Fira Code", monospace;
+        }
+        .warning {
+            background: #fff0f5;
+            border-left: 5px solid #ff69b4;
+            padding: 15px;
+            border-radius: 0 10px 10px 0;
+            margin: 20px 0;
+        }
+        .package-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .package-item {
+            background: white;
+            padding: 8px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #ffb3d9;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background: rgba(255,255,255,0.8);
+            border-radius: 15px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌸 小原のPython镜像源</h1>
+        <p>🍥这是什么镜像你心里有数~</p>
+    </header>
+
+    <div class="anime-box">
+        <h2>✨ 镜像地址</h2>
+        <code>https://koharachan.xin/simple</code>
+    </div>
+
+    <div class="warning">
+        <h3>⚠️ 重要注意喵！</h3>
+        <p>仅同步自：</p>
+        <div class="sync-logos">
+            <img src="https://mirrors.tuna.tsinghua.edu.cn/static/img/logo.png" alt="清华源">
+            <img src="https://mirrors.pku.edu.cn/static/logo.png" alt="北大源">
+        </div>
+        <ul>
+            <li>绝对不修改任何包内容哦~</li>
+            <li>当前收录常用包：<strong>92个</strong></li>
+        </ul>
+    </div>
+
+    <div class="anime-box">
+        <h2>📦 已收录的热门包</h2>
+        <div class="package-list">
+            <div class="package-item">numpy</div>
+            <div class="package-item">pandas</div>
+            <div class="package-item">requests</div>
+            <div class="package-item">matplotlib</div>
+            <div class="package-item">flask</div>
+            <div class="package-item">django</div>
+        </div>
+    </div>
+
+    <div class="anime-box">
+        <h2>📮 请求添加新包</h2>
+        <p>需要什么包请告诉我喵～</p>
+        <a href="mailto:ogatakohara@gmail.com" style="color: var(--main-color);">
+            💌 点击这里发送请求邮件
+        </a>
+        <p style="margin-top:10px;">
+            <span style="background:#ff9ff3; padding:5px 10px; border-radius:15px;">多久回不一定</span>
+        </p>
+    </div>
+
+    <footer>
+        <p>🛠️ 本镜像站由小原酱个人维护</p>
+        <p>⚡ 最后更新：2024年5月5日</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,422 @@
+body {
+    margin: 0;
+    padding-top: 3rem;
+    line-height: inherit;
+    background-color: white;
+    color: black;
+}
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    transition: .25s;
+}
+
+nav>ul {
+    list-style-type: none;
+    padding-right: 3rem;
+    width: 100%;
+    transition: .25s;
+}
+
+nav>ul>li,footer>ul>li {
+    display: inline;
+    transition: .25s;
+}
+
+nav>ul>li>a {
+    padding: 8px 16px;
+    font-size: 1.2rem;
+    transition: .25s;
+}
+
+nav>ul>li>a>img,footer>ul>li>a>img {
+    width: auto;
+    max-width: 3%;
+    height: 100%;
+    vertical-align: middle;
+    border-width: 0;
+    border-style: solid;
+}
+
+nav>ul>li>a:hover,footer>ul>li>a:hover {
+    color: #6cf;
+}
+
+section {
+    background-image: url(/images/default-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: .25s;
+}
+
+.banner {
+    color: white;
+    font-size: 3rem;
+    line-height: 1;
+    display: grid;
+    padding: 11%;
+    transition: .25s;
+}
+
+.banner>span {
+    opacity: 0.5;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    transition: .25s;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    transition: .25s;
+}
+
+#about , #work ,footer {
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    transition: .25s;
+}
+
+.heading-underline {
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #6cf;
+}
+
+.tags{
+    margin-top: 25px;
+    font-size: small;
+}
+
+.tags span,
+.username span {
+    display: inline-block;
+    margin: 3px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .05);
+    transition: .25s;
+    font-size: 15px;
+}
+
+.text{
+    margin: 61px;
+    font-size: 18px;
+}
+
+.allworks {
+    width: 300px;
+    height: 250px;
+    margin: 0 15px 30px 15px;
+    background-color: var(--bg-w-pure);
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, .03) 0 5px 10px;
+    -moz-box-shadow: rgba(0,0,0,.03) 0 5px 10px;
+    box-shadow: rgba(0, 0, 0, .03) 0 5px 10px;
+    text-align: left;
+    overflow: hidden;
+    transition: .25s;
+    cursor: pointer;
+    font-family: "PingFang SC", "Microsoft Yahei", "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
+}
+
+.work-link-image {
+    height: 155px;
+    background-color: var(--b-alpha-5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.work-link-text-container {
+    padding: 10px 20px;
+}
+
+.work-link-title {
+    margin: 5px 0 0;
+    color: var(--txt-b-pure);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.work-link-description {
+    margin: 1px 0 0;
+    color: var(--txt-b-pure);
+    font-size: small;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.work-link-category {
+    margin: 9px 0 0;
+    font-size: 12px;
+    color: var(--b-alpha-50);
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul img{
+    width: 46px;
+}
+
+.goout {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.goout a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.goout a:hover {
+    color: #4169E1;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.tellyou{
+    text-align: center;
+    a img{
+        display:inline-block;
+        vertical-align:middle
+    }
+}
+
+/* -----------------------------------
+   Tablet (up to 1024px)
+----------------------------------- */
+/* RSS Feed Styles */
+#rss-feed {
+    width: 100%;
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: rgba(0,0,0,0.05) 0 2px 4px;
+}
+
+#rss-feed h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.rss-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.rss-entry {
+    width: 100%;
+    overflow: hidden;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    transition: all 0.5s;
+}
+.rss-entry:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+/* 暗黑模式 */
+.dark #rss-feed .rss-entry {
+    background-color: #1e293b;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.rss-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0,0,0,0.1) 0 4px 12px;
+}
+
+.rss-entry:last-child {
+    border-bottom: none;
+}
+
+/* 限制一行最多5个 */
+@media (min-width: 1064px) {
+    .rss-list {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.rss-entry h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.rss-entry h3 a {
+    color: #4169E1;
+}
+
+.rss-time {
+    font-size: 0.875rem;
+    color: #666;
+    margin: 0.25rem 0;
+}
+
+.rss-desc {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    nav > ul > li {
+      text-align: center;
+    }
+    nav > ul > li a {
+      padding: 12px;
+      font-size: 1rem;
+    }
+  
+    .banner {
+      padding: 8%;
+      font-size: 2.5rem;
+    }
+    .banner > span {
+      font-size: 0.8rem;
+    }
+  
+    #about, #work, footer {
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+  
+    .allworks {
+      width: calc(50% - 30px);
+      margin: 15px;
+    }
+  }
+  
+  /* -----------------------------------
+     Mobile (up to 640px)
+  ----------------------------------- */
+  @media (max-width: 640px) {
+    /* collapse nav into a toggle (you'll need to add a button + JS separately if you want a true hamburger) */
+    nav>ul>li>a>img,footer>ul>li>a>img {
+        width: auto;
+        max-width: 8%;
+        height: 100%;
+        vertical-align: middle;
+        border-width: 0;
+        border-style: solid;
+    }
+    .banner {
+      font-size: 2rem;
+      padding: 6%;
+    }
+    .banner > span {
+      display: none; /* hide subtitle on very small screens */
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    .text {
+      margin: 30px 16px;
+      font-size: 16px;
+    }
+  
+    #about, #work, footer {
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  
+    .allworks {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .work-link-image {
+      height: 140px;
+    }
+  
+    .work-link-title {
+      font-size: 14px;
+    }
+    .work-link-description {
+      font-size: 12px;
+    }
+    .work-link-category {
+      font-size: 11px;
+    }
+    .footer-top {
+      flex-direction: column;
+      text-align: center;
+      font-size: 0.7rem;
+    }
+    .goout {
+      margin: 20px 0;
+    }
+  }
+
+  @media (max-width: 396px) {
+    nav>ul>li>a>img,footer>ul>li>a>img {
+        max-width: 10%;
+    }
+    nav>ul{
+        font-size: 0.318rem;
+        padding: 6px;
+    }
+    nav > ul > li a {
+        padding: 9px;
+        svg{
+            width: 1.6rem;
+        }
+    }
+
+  }
+  

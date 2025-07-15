@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小原酱的个人首页|下载中心</title>
+    <link rel="icon" href="/images/icon_ya.png" as="image" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+        }
+
+        .download-list {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .download-card {
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .download-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .file-icon {
+            width: 64px;
+            height: 64px;
+            background: #e8f4ff;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .file-icon i {
+            font-size: 28px;
+            color: #007bff;
+        }
+
+        .file-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .file-desc {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            min-height: 3em;
+        }
+
+        .download-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .download-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #007bff, #0062cc);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+
+        .download-btn:hover {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <!-- 引入Font Awesome图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>资源下载</h1>
+            <p>获取我开发的项目最新版本下载方式</p>
+        </header>
+
+        <div class="download-list">
+            <!-- 下载项 1 -->
+            <div class="download-card">
+                <div class="file-icon">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <h3 class="file-name">ACE工具箱</h3>
+                <p class="file-desc">一个小工具箱（虽然比小而美还大）</p>
+                <div class="download-meta">
+                    <span>7Z 压缩包</span>
+                    <span>353.8 MB</span>
+                </div>
+                <a href="https://pan.baidu.com/s/1ulJxykw9rL0qJMuVSc_m3w?pwd=8888" class="download-btn">立即下载</a>
+            </div>
+
+            <!-- 下载项 2 -->
+            <div class="download-card">
+                <div class="file-icon">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <h3 class="file-name">cf-auto-up</h3>
+                <p class="file-desc">基于 Cloudflare API 的 A/AAAA 记录自动监控与切换工具
+                    支持候选 IP 延迟测试、IPv6、记录类型自动识别。</p>
+                <div class="download-meta">
+                    <span>zip 压缩包</span>
+                    <span>18.3 KB</span>
+                </div>
+                <a href="https://cnb.cool/koharachan/cf-auto-up/-/git/archive/v0.0.1.zip" class="download-btn">立即下载</a>
+            </div>
+
+            <!-- 下载项 3 -->
+            <div class="download-card">
+                <div class="file-icon">
+                    <i class="fa-solid fa-music"></i>
+                </div>
+                <h3 class="file-name">网易你听我说</h3>
+                <p class="file-desc">抽象音乐，【洛天依原创】网易你听我说</p>
+                <div class="download-meta">
+                    <span>zip 压缩包</span>
+                    <span>6.75 MB</span>
+                </div>
+                <a href="https://pan.baidu.com/s/17wzb6SJ_paMDOMT0uqmHHA?pwd=8888" class="download-btn">立即下载</a>
+            </div>
+
+            <!-- 下载项 4 -->
+            <div class="download-card">
+                <div class="file-icon">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <h3 class="file-name">TrumpEarShot</h3>
+                <p class="file-desc">ciallo world</p>
+                <div class="download-meta">
+                    <span>zip 压缩包</span>
+                    <span>82.8 KB</span>
+                </div>
+                <a href="https://github.com/Genshinzmnl/TrumpEarShot/archive/refs/tags/v1.0.0.zip" class="download-btn">立即下载</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
