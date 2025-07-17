@@ -1,5 +1,5 @@
 window.onload = function () {
-  fetch("http://192.168.5.38/rss.xml")
+  fetch("https://blog.meowhead.cn/rss.xml")
     .then((res) => res.text())
     .then((xmlStr) => new window.DOMParser().parseFromString(xmlStr, "text/xml"))
     .then((data) => {
